@@ -13,12 +13,12 @@ var myWindow = window.open(adresse, "fenster", "width=500,height=500");
 const Http = new XMLHttpRequest();
 const HttpChanged = new XMLHttpRequest();
 
-setInterval("load();", 2000);//laed die Hauptseite im Interval von X ms
+setInterval(load(), 2000);//laed die Hauptseite im Interval von X ms
 
 function load() {
 	check();
 	if (CHANGED) {
-		const url='http://localhost:80/users/adresse';
+		const url='http://localhost/users/adresse';
 		Http.open("GET", url);
 		Http.send();
 	}
@@ -33,7 +33,7 @@ Http.onreadystatechange = (e) => {
 }
 
 function check() {
-	const url='http://localhost:80/users/changed';
+	const url='http://localhost/users/changed';
 	HttpChanged.open("GET", url);
 	HttpChanged.send();
 }
