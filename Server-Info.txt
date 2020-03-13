@@ -1,0 +1,8 @@
+//Author Alexander Kuemmel
+//13.03.2020
+Funktionsweise des Server-Scripts:
+Im Browser bzw. Alexa-Linkabfragen werden Befehle an den Server geschickt
+- "voiceup.informatik.hs-fulda.de" öffnet via popup das Fenster der Hauptseite
+	- darf nicht geschlossen werden wegen interval reload
+	- weitere Befehle in extra Tab eintippen!
+- "localhost/users/karim" öffnet den Eintrag in routes/users.js
