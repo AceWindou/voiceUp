@@ -1,8 +1,11 @@
 //Author Alexander Kuemmel
-//13.03.2020 Prototyp
+//17.03.2020
+/*
+Startscript, welches Hauptseite aufruft und refreshed
+adresse: Die URL welche gerade angezeigt werden soll
 
-//Startscript, welches Hauptseite aufruft und refreshed
-//Reagiert auf res.send und Changed(globale Variable) von users.js
+Alles noch ziemlich Buggy weil Milde-Code und "CHANGED" irgendwie sinnlos
+*/
 
 console.log("Frontend geladen");
 
@@ -13,12 +16,13 @@ var myWindow = window.open(adresse, "fenster", "width=500,height=500");
 const Http = new XMLHttpRequest();
 const HttpChanged = new XMLHttpRequest();
 
-setInterval(load, 2000);//laed die Hauptseite im Interval von X ms
+setInterval(load, 2000); //refreshed die Hauptseite im Interval von X ms
 
 function load() {
 	check();
 	if (CHANGED) {
 		const url='http://localhost/users/adresse';
+		//const url='http://voiceup.informatik.hs-fulda.de/users/adresse';
 		Http.open("GET", url);
 		Http.send();
 	}
@@ -34,6 +38,7 @@ Http.onreadystatechange = (e) => {
 
 function check() {
 	const url='http://localhost/users/changed';
+	//const url='http://voiceup.informatik.hs-fulda.de/users/changed';
 	HttpChanged.open("GET", url);
 	HttpChanged.send();
 }
@@ -41,6 +46,7 @@ function check() {
 HttpChanged.onreadystatechange = (f) => {	
 	if(HttpChanged.readyState === XMLHttpRequest.DONE && HttpChanged.status === 200) {
 		CHANGED = ("1" == HttpChanged.responseText);
+		
 	}
 }
 
