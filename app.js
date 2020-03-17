@@ -1,11 +1,19 @@
-var createError = require('http-errors');
-var express = require('express');
-var path = require('path');
-var cookieParser = require('cookie-parser');
-var logger = require('morgan');
+//Author: Alexander Kuemmel
+//17.03.2020
+/*
+Linux Server benutzt .jade und nicht .pug, unbedingt hier nur das noetigste aendern!
+App.js definiert Module und Globale Variablen die nicht noch einmal in den Modulen initialisiert werden müssen.
+Require ist allerdings nur lokal innerhalb der Module
+*/
+const createError = require('http-errors');
+const express = require('express');
+const path = require('path');
+const cookieParser = require('cookie-parser');
+const logger = require('morgan');
 
-var indexRouter = require('./routes/index');
-var usersRouter = require('./routes/users');
+const indexRouter = require('./routes/index');
+const usersRouter = require('./routes/users');
+//const usersBackend = require('./public/javascripts/backend');
 
 var app = express();
 
