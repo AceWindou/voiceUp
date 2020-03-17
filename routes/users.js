@@ -17,7 +17,7 @@ router.get('/name*', function(req, res, next) {
 	ADRESSE = "";
 	//var str = router.stack[0].path; //holt sich die Request-URL
 	
-	res.send("ok");
+	res.send(router.stack[0].path);
 });
 
 router.get('/adresse', function(req, res, next) {
