@@ -1,0 +1,182 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<root>
+	<contact>
+	  <URL></URL>
+	  <PNR>1234502</PNR>
+	  <amt>Haupt- und Personalamt</amt>
+	  <name>Johannes</name>
+	  <nachname>Heller</nachname>
+	  <verantwortlich>Magistratspressestelle</verantwortlich>
+	  <raum>F 106</raum>
+	  <sprechzeit></sprechzeit>
+	  <phone>0661 102 1004</phone>
+	</contact>
+
+	<contact>
+	  <URL></URL>
+	  <PNR>1234503</PNR>
+	  <amt>Haupt- und Personalamt</amt>
+	  <name>Monika</name>
+	  <nachname>Kowoll-Ferger</nachname>
+	  <verantwortlich>Magistratspressestelle</verantwortlich>
+	  <raum>F 106</raum>
+	  <sprechzeit></sprechzeit>
+	  <phone>0661 102 1008</phone>
+	</contact>
+
+	<contact>
+	  <URL></URL>
+	  <PNR>1234534</PNR>
+	  <amt>Rechts- und Ordnungsamt</amt>
+	  <name>Ulrike</name>
+	  <nachname>Richter</nachname>
+	  <verantwortlich>Amtsleitung Rechts- und Ordnungsamt</verantwortlich>
+	  <raum>B 114</raum>
+	  <sprechzeit>Mo, Di, Mi, Do 8.30-12.00 und 14.00-16.00 Uhr Fr 8.30-13.00 Uhr</sprechzeit>
+	  <phone>0661 102 1300</phone>
+	</contact>
+
+	<contact>
+	  <URL></URL>
+	  <PNR>1234535</PNR>
+	  <amt>Rechts- und Ordnungsamt</amt>
+	  <name>Ramona</name>
+	  <nachname>Gärtner</nachname>
+	  <verantwortlich>Rechts- und Ordnungsamt</verantwortlich>
+	  <raum>B 110</raum>
+	  <sprechzeit>Mo, Di, Mi, Do 8.30-12.00 und 14.00-16.00 Uhr Fr 8.30-13.00 Uhr</sprechzeit>
+	  <phone>0661 102 1320</phone>
+	</contact>
+
+	<contact>
+	  <URL></URL>
+	  <PNR>1234536</PNR>
+	  <amt>Rechts- und Ordnungsamt</amt>
+	  <name>Jürgen</name>
+	  <nachname>Schmitt</nachname>
+	  <verantwortlich>Gewerbeamt</verantwortlich>
+	  <raum>B 113</raum>
+	  <sprechzeit>Mo, Di, Mi, Do 8.30-12.00 und 14.00-16.00 Uhr Fr 8.30-13.00 Uhr</sprechzeit>
+	  <phone>0661 102 1325</phone>
+	</contact>
+
+	<contact>
+	  <URL></URL>
+	  <PNR>1234538</PNR>
+	  <amt>Standesamt Fulda</amt>
+	  <name>Christine</name>
+	  <nachname>Wiegand</nachname>
+	  <verantwortlich>Eheschließung</verantwortlich>
+	  <raum>A 010</raum>
+	  <sprechzeit>Mo, Di, Do 8.00-18.00 und Mi 8.00- 12-00 Uhr Fr 8.00-15.00 Uhr</sprechzeit>
+	  <phone>0661 102 1375</phone>
+	</contact>
+
+	<contact>
+	  <URL></URL>
+	  <PNR>1234539</PNR>
+	  <amt>Standesamt Fulda</amt>
+	  <name>Tobias</name>
+	  <nachname>Auth</nachname>
+	  <verantwortlich>Eheschließung</verantwortlich>
+	  <raum>A 007</raum>
+	  <sprechzeit>Mo, Di, Do 8.00-18.00 und Mi 8.00- 12-00 Uhr Fr 8.00-15.00 Uhr</sprechzeit>
+	  <phone>0661 102 1376</phone>
+	</contact>
+
+	<contact>
+	  <URL></URL>
+	  <PNR>1234539</PNR>
+	  <amt>Standesamt Fulda</amt>
+	  <name>Uli</name>
+	  <nachname>Schreiner</nachname>
+	  <verantwortlich>Eheschließung</verantwortlich>
+	  <raum>A 007</raum>
+	  <sprechzeit>Mo, Di, Do 8.00-18.00 und Mi 8.00- 12-00 Uhr Fr 8.00-15.00 Uhr</sprechzeit>
+	  <phone>0661 102 1372</phone>
+	</contact>
+
+	<contact>
+	  <URL></URL>
+	  <PNR>1234509</PNR>
+	  <amt>Hauptamt und Personalamt</amt>
+	  <name>Susanne</name>
+	  <nachname>Schreiber</nachname>
+	  <verantwortlich>Patenschaften</verantwortlich>
+	  <raum>F 008</raum>
+	  <sprechzeit>Mo, Di, Mi, Do 8.30-12.00 und 14.00-16.00 Uhr Fr 8.30-13.00 Uhr</sprechzeit>
+	  <phone>0661 102 1067</phone>
+	</contact>
+
+	<contact>
+	  <URL></URL>
+	  <PNR>1234510</PNR>
+	  <amt>Hauptamt und Personalamt</amt>
+	  <name>Torsten</name>
+	  <nachname>Most</nachname>
+	  <verantwortlich>Beschaffung/ Poststelle</verantwortlich>
+	  <raum>B 001</raum>
+	  <sprechzeit>Mo, Di, Mi, Do 8.30-12.00 und 14.00-16.00 Uhr Fr 8.30-13.00 Uhr</sprechzeit>
+	  <phone>0661 102 1120</phone>
+	</contact>
+
+	<contact>
+	  <URL></URL>
+	  <PNR>1234514</PNR>
+	  <amt> Stadtkämmerei</amt>
+	  <name>Andreas</name>
+	  <nachname>Hildebrand</nachname>
+	  <verantwortlich>Amtsleitung der Kämmerei</verantwortlich>
+	  <raum>E 022</raum>
+	  <sprechzeit>Mo, Di, Mi, Do 8.30-12.00 und 14.00-16.00 Uhr Fr 8.30-13.00 Uhr</sprechzeit>
+	  <phone>0661 102 1200</phone>
+	</contact>
+
+	<contact>
+	  <URL></URL>
+	  <PNR>1234515</PNR>
+	  <amt> Stadtkämmerei</amt>
+	  <name>Jörg</name>
+	  <nachname>Hosch</nachname>
+	  <verantwortlich>Haushalt</verantwortlich>
+	  <raum>E 001</raum>
+	  <sprechzeit>Mo, Di, Mi, Do 8.30-12.00 und 14.00-16.00 Uhr Fr 8.30-13.00 Uhr</sprechzeit>
+	  <phone>0661 102 1219</phone>
+	</contact>
+
+	<contact>
+	  <URL></URL>
+	  <PNR>1234528</PNR>
+	  <amt> Kulturamt</amt>
+	  <name>Jürgen</name>
+	  <nachname>Peter</nachname>
+	  <verantwortlich>Veranstaltungs- und Eventmanagement</verantwortlich>
+	  <raum>C 255</raum>
+	  <sprechzeit></sprechzeit>
+	  <phone>0661 102 1443</phone>
+	</contact>
+
+	<contact>
+	  <URL></URL>
+	  <PNR>1234531</PNR>
+	  <amt> Stadtmarketing / Wirtschaftsförderung</amt>
+	  <name>Peter</name>
+	  <nachname>Hügel</nachname>
+	  <verantwortlich>Amtsleitung für Stadtmarketing und Wirtschaftsförderung</verantwortlich>
+	  <raum>F 001</raum>
+	  <sprechzeit> Mo- Fr 8.30-18.00 Uhr Sa,So 9.30-16.00 Uhr</sprechzeit>
+	  <phone>0661 102 1800</phone>
+	</contact>
+
+	<contact>
+	  <URL></URL>
+	  <PNR>1234532</PNR>
+	  <amt> Stadtmarketing / Wirtschaftsförderung</amt>
+	  <name>Dominik</name>
+	  <nachname>Höhl</nachname>
+	  <verantwortlich>Amtsleitung für Stadtmarketing und Wirtschaftsförderung</verantwortlich>
+	  <raum>F 003</raum>
+	  <sprechzeit> Mo- Fr 8.30-18.00 Uhr Sa,So 9.30-16.00 Uhr</sprechzeit>
+	  <phone>0661 102 1803</phone>
+	</contact>
+</root>
