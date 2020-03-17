@@ -1,5 +1,5 @@
 //Author Alexander Kuemmel
-//13.03.2020 Prototyp
+//17.03.2020 Prototyp
 
 //Dieses Script catched url anfragen von Alexa und leitet diese an die Datenbank weiter
 //Changed = 1/0 wird in frontend.js abgefragt
@@ -10,6 +10,11 @@ var router = express.Router();
 
 var ADRESSE;
 var CHANGED = "0";
+
+router.get('/name*', function(req, res, next) {
+	//Gibt den Request-Pfad zurueck
+	res.send(router.stack[0].path);
+});
 
 router.get('/karim', function(req, res, next) {
 	CHANGED = "1";
