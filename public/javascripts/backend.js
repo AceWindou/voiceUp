@@ -6,12 +6,12 @@ Handelt Suchanfragen auf Datenbank
 Input: Frage(Wer ist verantwortlich...), Referenz(...fuer das Standesamt?)
 Output: Antwort auf Frage(Person die verantwortlich ist)
 */
-var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
-
 console.log("Backend geladen");
-console.log(this.statusText);
 
-var datenbank = new XMLHttpRequest();
+/*
+const XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
+
+const datenbank = new XMLHttpRequest();
 
 datenbank.open("GET", "../datenbank/datenbank.xml");
 
@@ -34,3 +34,25 @@ function search() {
 		console.log( x[i].childNodes[0].nodeValue );
 	}
 }
+*/
+
+
+const XmlReader = require('xml-reader');
+const xmlQuery = require('xml-query');
+const xml = 
+`<contact>
+	<URL></URL>
+	<PNR>1234502</PNR>
+	<amt>Haupt- und Personalamt</amt>
+	<name>Johannes</name>
+	<nachname>Heller</nachname>
+	<verantwortlich>Magistratspressestelle</verantwortlich>
+	<raum>F 106</raum>
+	<sprechzeit></sprechzeit>
+	<phone>0661 102 1004</phone>
+</contact>` ;
+
+const ast = XmlReader.parseSync(xml);
+//console.log(ast);
+
+console.log( xmlQuery(ast).find('amt').children().text() ); 
