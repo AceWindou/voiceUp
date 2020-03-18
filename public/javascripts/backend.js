@@ -6,6 +6,8 @@ Handelt Suchanfragen auf Datenbank
 Input: Frage(Wer ist verantwortlich...), Referenz(...fuer das Standesamt?)
 Output: Antwort auf Frage(Person die verantwortlich ist)
 */
+var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
+
 console.log("Backend geladen");
 
 var datenbank = new XMLHttpRequest();
