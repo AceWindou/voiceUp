@@ -13,7 +13,7 @@ const logger = require('morgan');
 
 const indexRouter = require('./routes/index');
 const usersRouter = require('./routes/users');
-//const usersBackend = require('./public/javascripts/backend');
+const usersBackend = require('./public/javascripts/backend');
 
 var app = express();
 
