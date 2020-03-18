@@ -9,7 +9,7 @@ Output: Antwort auf Frage(Person die verantwortlich ist)
 var XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
 
 console.log("Backend geladen");
-console.log(this.status);
+console.log(this.statusText);
 
 var datenbank = new XMLHttpRequest();
 
