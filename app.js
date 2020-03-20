@@ -1,5 +1,5 @@
 //Author: Alexander Kuemmel
-//17.03.2020
+//20.03.2020
 /*
 Linux Server benutzt .jade und nicht .pug, unbedingt hier nur das noetigste aendern!
 App.js definiert Module und Globale Variablen die nicht noch einmal in den Modulen initialisiert werden müssen.
@@ -12,8 +12,8 @@ const cookieParser = require('cookie-parser');
 const logger = require('morgan');
 
 const indexRouter = require('./routes/index');
-const usersRouter = require('./routes/users');
-const usersBackend = require('./public/javascripts/backend');
+const searchRouter = require('./routes/search.js');
+const backend = require('./public/javascripts/backend');
 
 var app = express();
 
