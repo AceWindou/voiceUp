@@ -1,58 +1,42 @@
 //Author Alexander Kuemmel
-//17.03.2020
+//20.03.2020
 /*
 Wird nach Frontend geladen und erbt HTML-Methoden wie "GetElement..."
-Handelt Suchanfragen auf Datenbank
-Input: Frage(Wer ist verantwortlich...), Referenz(...fuer das Standesamt?)
-Output: Antwort auf Frage(Person die verantwortlich ist)
+Handelt Suchanfragen auf Datenbank ab
+Bsp "Wer ist verantwortlich fuer das Standesamt?":
+Parameter: verantwortlich -> Standesamt
+Antwort: name -> Christine.... ff
 */
 console.log("Backend geladen");
 
-/*
-const XMLHttpRequest = require("xmlhttprequest").XMLHttpRequest;
+const DOMParser = require('xmldom').DOMParser;
+const fs = require('fs');
 
-const datenbank = new XMLHttpRequest();
+var data, doc;
 
-datenbank.open("GET", "../datenbank/datenbank.xml");
+fs.readFile('public/datenbank/datenbank.xml', 'utf8', (err, data) => {
+	if (err) throw err;
+	doc = new DOMParser().parseFromString(data);
+});
 
-datenbank.onreadystatechange = function () {
-    if (this.readyState == 4) {
-		if (this.status == 200) {
-			console.log("Datenbank geladen");
-		} else {
-			console.log("Konnte Datenbank nicht laden");
+function search(param) {
+	var entries, value, result;
+	var answer = [];
+	
+	//Eintraege fuer param[0] (verantwortlich)
+	entries = doc.getElementsByTagName(param[0]);
+	for (i = 0; i < entries.length; i++) { 
+		//Eintrage fuer param[1] (Standesamt)
+		value = entries[i].childNodes[0].nodeValue;
+		if (value == param[1]) {
+			//Eintrage fuer param[2] (name) im Parent
+			result = entries[i].parentNode;
+			result = result.getElementsByTagName(param[2])[0].childNodes[0].nodeValue;
+			answer.push(result);
 		}
-    }
-};
-datenbank.send();
-
-function search() {
-	var x, i, txt, xmlDoc; 
-	xmlDoc = datenbank.responseXML;
-	x = xmlDoc.getElementsByTagName("name");
-	for (i = 0; i < x.length; i++) { 
-		console.log( x[i].childNodes[0].nodeValue );
 	}
+	console.log("Ergebnis:");
+	console.log(answer);
 }
-*/
 
-
-const XmlReader = require('xml-reader');
-const xmlQuery = require('xml-query');
-const xml = 
-`<contact>
-	<URL></URL>
-	<PNR>1234502</PNR>
-	<amt>Haupt- und Personalamt</amt>
-	<name>Johannes</name>
-	<nachname>Heller</nachname>
-	<verantwortlich>Magistratspressestelle</verantwortlich>
-	<raum>F 106</raum>
-	<sprechzeit></sprechzeit>
-	<phone>0661 102 1004</phone>
-</contact>` ;
-
-const ast = XmlReader.parseSync(xml);
-//console.log(ast);
-
-console.log( xmlQuery(ast).find('amt').children().text() ); 
+module.exports = search; //Macht search() global verfuegbar
