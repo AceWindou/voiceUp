@@ -3,8 +3,6 @@
 /*
 Startscript, welches Hauptseite aufruft und refreshed
 adresse: Die URL welche gerade angezeigt werden soll
-
-Alles noch ziemlich Buggy weil Milde-Code und "CHANGED" irgendwie sinnlos
 */
 
 console.log("Frontend geladen");
