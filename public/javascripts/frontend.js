@@ -9,7 +9,8 @@ Alles noch ziemlich Buggy weil Milde-Code und "CHANGED" irgendwie sinnlos
 
 console.log("Frontend geladen");
 
-var adresse = "https://www.hs-fulda.de";
+//var adresse = "https://www.hs-fulda.de";
+var adresse = "https://www.fulda.de/";
 var CHANGED = "1";
 
 var myWindow = window.open(adresse, "fenster", "width=500,height=500");
