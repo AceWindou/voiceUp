@@ -1,5 +1,5 @@
 //Author Alexander Kuemmel
-//17.03.2020
+//31.03.2020
 /*
 Startscript, welches Hauptseite aufruft und refreshed
 adresse: Die URL welche gerade angezeigt werden soll
@@ -20,7 +20,7 @@ setInterval(load, 2000); //refreshed die Hauptseite im Interval von X ms
 function load() {
 	check();
 	if (CHANGED) {
-		const url='http://localhost/users/adresse';
+		const url='http://voiceup.informatik.hs-fulda.de/adresse';
 		//const url='http://voiceup.informatik.hs-fulda.de/users/adresse';
 		Http.open("GET", url);
 		Http.send();
@@ -36,7 +36,7 @@ Http.onreadystatechange = (e) => {
 }
 
 function check() {
-	const url='http://localhost/users/changed';
+	const url='http://voiceup.informatik.hs-fulda.de/changed';
 	//const url='http://voiceup.informatik.hs-fulda.de/users/changed';
 	HttpChanged.open("GET", url);
 	HttpChanged.send();
