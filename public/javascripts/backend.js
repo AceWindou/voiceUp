@@ -1,5 +1,5 @@
 //Author Alexander Kuemmel
-//20.03.2020
+//31.03.2020
 /*
 Wird nach Frontend geladen und erbt HTML-Methoden wie "GetElement..."
 Handelt Suchanfragen auf Datenbank ab
@@ -12,6 +12,7 @@ console.log("Backend geladen");
 const DOMParser = require('xmldom').DOMParser;
 const fs = require('fs');
 
+var adresse = "https://www.hs-fulda.de";
 var data, doc;
 
 fs.readFile('public/datenbank/datenbank.xml', 'utf8', (err, data) => {
@@ -31,12 +32,14 @@ function search(param) {
 		if (value == param[1]) {
 			//Eintrage fuer param[2] (name) im Parent
 			result = entries[i].parentNode;
+			adresse = result.getElementsByTagName('URL')[0].childNodes[0].nodeValue;
 			result = result.getElementsByTagName(param[2])[0].childNodes[0].nodeValue;
+			//Aktualisiere die Hauptseite mit Anfrageprofil
 			answer.push(result);
 		}
 	}
-	console.log("Ergebnis:");
-	console.log(answer);
+	answer.push(adresse);
+	return answer;
 }
 
 module.exports = search; //Macht search() global verfuegbar
